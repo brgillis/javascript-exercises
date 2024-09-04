@@ -1,6 +1,8 @@
 const sumAll = function(iLow, iHigh) {
   // Check for valid input
-  if(iLow < 0 || iHigh < 0) {
+  if(iLow < 0 || iHigh < 0 ||
+    !(Object(iLow) instanceof Number) || !(Object(iHigh) instanceof Number) ||
+    !Number.isInteger(iLow) || !Number.isInteger(iHigh)) {
     return "ERROR";
   }
 
