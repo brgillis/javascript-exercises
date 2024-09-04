@@ -1,4 +1,9 @@
 const sumAll = function(iLow, iHigh) {
+  // Check for valid input
+  if(iLow < 0 || iHigh < 0) {
+    return "ERROR";
+  }
+
 
   // Check for valid order, and swap if not
   if(iHigh<iLow){
